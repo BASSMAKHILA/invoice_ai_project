@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymongo
+motor
+pydantic
+python-dotenv
+pytesseract
+pdfplumber
+pillow
+pdf2image
+ollama

@@ -1,0 +1,225 @@
+/* UploadDocument.css */
+
+/* ===== Container principal ===== */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+header img.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #fdd835;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #fdd835;
+  margin: 0;
+}
+
+header p {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+/* ===== Upload Drag & Drop ===== */
+.upload-area {
+  border: 2px dashed #fdd835;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.upload-area:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
+.upload-area p {
+  margin: 0;
+  font-size: 16px;
+  color: #fdd835;
+}
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+/* ===== Upload list ===== */
+.upload-list {
+  margin-bottom: 30px;
+}
+
+.upload-list h2 {
+  color: #fdd835;
+  margin-bottom: 15px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #444;
+  margin-left: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #fdd835;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.progress.success {
+  background-color: #4caf50;
+}
+
+.progress.error {
+  background-color: #e53935;
+}
+
+.upload-btn {
+  background-color: #fdd835;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #ffc107;
+}
+
+/* ===== Tables ===== */
+.tables-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.table-container {
+  flex: 1;
+  min-width: 450px;
+}
+
+.table-container h2 {
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #333;
+}
+
+thead th {
+  color: #fdd835;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #444;
+}
+
+tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+button {
+  background-color: #fdd835;
+  color: #1e1e1e;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+a {
+  color: #fdd835;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Editor Section ===== */
+.editor-section {
+  margin-top: 30px;
+}
+
+.editor-section h2 {
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+.editor-section textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #fdd835;
+  resize: vertical;
+}
+
+.editor-section button {
+  margin-top: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .tables-section {
+    flex-direction: column;
+  }
+}
